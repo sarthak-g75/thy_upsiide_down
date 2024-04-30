@@ -14,7 +14,7 @@ import Divider from '@/components/Divider'
 import { process } from '@/components/projects/TrustTheProcess'
 import Menu from '@/components/aboutUs/Menu'
 import { twMerge } from 'tailwind-merge'
-import { projects } from '@/data/projects'
+import { projects, ProjectsI } from '@/data/projects'
 import { services } from '@/data/services'
 import SecondaryNavbar from '@/components/SecondaryNavbar'
 
@@ -32,6 +32,16 @@ const page = () => {
       window.removeEventListener('resize', handleResize)
     }
   }, [])
+  const filteredProjects = (projects: ProjectsI[]) => {
+    // Define your filtering condition inside the filter method
+    const filtered = projects.filter((project) => {
+      // Filter projects with a non-empty review
+      return project.review !== undefined && project.review !== ''
+    })
+    // console.log(filtered)
+    // Return the filtered array
+    return filtered
+  }
 
   return (
     <div className='flex flex-col items-center justify-start overflow-y-scroll scrollbar-none'>
@@ -42,7 +52,7 @@ const page = () => {
         <Services></Services>
         <Process width={width}></Process>
         <Reviews
-          projects={projects}
+          projects={filteredProjects(projects)}
           activeindex={activeindex}
           setActiveIndex={setActiveIndex}
         ></Reviews>
@@ -457,14 +467,15 @@ function Reviews(props: {
               className='p-2 cursor-pointer hover:bg-mutedBlack/20 transition-all rounded-full'
             >
               <FiChevronLeft />
-            </div>{' '}
+            </div>
+
             <div>
-              {props.activeindex + 1} / {projects.length}
+              {props.activeindex + 1} / {props.projects.length}
             </div>
             <div
               onClick={() =>
                 props.setActiveIndex((prev: number) =>
-                  prev === projects.length - 1 ? prev : prev + 1
+                  prev === props.projects.length - 1 ? prev : prev + 1
                 )
               }
               className='p-2 cursor-pointer hover:bg-mutedBlack/20 transition-all rounded-full'
