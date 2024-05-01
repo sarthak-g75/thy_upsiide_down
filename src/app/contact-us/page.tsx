@@ -175,9 +175,9 @@ const page = () => {
         <div className='px-4 lg:px-0 flex flex-col w-full text-center gap-4 items-center opacity-70 py-4'>
           <a
             className='border-b-2 border-accent font-semibold text-xl mb-20'
-            href='mailto:thyupsiidedown@gmail.com'
+            href='mailto:info@thyupsiidedown.com'
           >
-            thyupsiidedown@gmail.com
+            info@thyupsiidedown.com
           </a>
           2023 • Thy Upsiide Down • All Rights Reserved
         </div>

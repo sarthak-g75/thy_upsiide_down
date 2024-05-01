@@ -497,9 +497,9 @@ function Contact() {
       </div>
       <a
         className='border-b-2 border-accent -mb-4 font-semibold text-xl'
-        href='mailto:thyupsiidedown@gmail.com'
+        href='mailto:info@thyupsiidedown.com'
       >
-        thyupsiidedown@gmail.com
+        info@thyupsiidedown.com
       </a>
       <div className='opacity-40 text-sm mt-4'>or</div>
       <Link

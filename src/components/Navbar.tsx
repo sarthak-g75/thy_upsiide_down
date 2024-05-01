@@ -113,7 +113,7 @@ const NavBar = () => {
             )
           })}
           <div className='hidden lg:block p-2 cursor-pointer rounded-full hover:bg-accent/20 bg-white/20 hover:text-accent'>
-            <a href='mailto:thyupsiidedown@gmail.com'>
+            <a href='mailto:info@thyupsiidedown.com'>
               <FiMail />
             </a>
           </div>
