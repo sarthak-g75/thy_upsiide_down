@@ -164,15 +164,15 @@ export const projects: ProjectsI[] = [
       {
         type: 'imgTwoCol',
         src: [
-          '/projects/funkyverse/thefunkyverse_2.png',
-          '/projects/funkyverse/thefunkyverse_3.png',
+          '/projects/funkyVerse/thefunkyverse_2.png',
+          '/projects/funkyVerse/thefunkyverse_3.png',
         ],
       },
       {
         type: 'imgTwoCol',
         src: [
-          '/projects/funkyverse/thefunkyverse_4.png',
-          '/projects/funkyverse/thefunkyverse_5.png',
+          '/projects/funkyVerse/thefunkyverse_4.png',
+          '/projects/funkyVerse/thefunkyverse_5.png',
         ],
       },
     ],
