@@ -151,4 +151,30 @@ export const projects: ProjectsI[] = [
       },
     ],
   },
+  {
+    title: 'Web design and development',
+    type: 'project',
+    companyName: 'The Funky Verse',
+    customerName: 'Manan Sharma and Uchit Anand',
+    website: 'https://www.thefunkyverse.com/',
+    review: `Incredibly impressed with Funkyverse! Their clothing line brings a fresh and edgy twist to everyday fashion. The designs are innovative, the quality is exceptional, and every piece feels like it’s made to stand out. The brand's commitment to delivering something unique truly shines through. Excited to see what they create next—definitely a go-to for bold and stylish looks!`,
+    id: 'tfv',
+    images: [
+      { type: 'imgOneCol', src: ['/projects/funkyVerse/thefunkyverse_1.png'] },
+      {
+        type: 'imgTwoCol',
+        src: [
+          '/projects/funkyverse/thefunkyverse_2.png',
+          '/projects/funkyverse/thefunkyverse_3.png',
+        ],
+      },
+      {
+        type: 'imgTwoCol',
+        src: [
+          '/projects/funkyverse/thefunkyverse_4.png',
+          '/projects/funkyverse/thefunkyverse_5.png',
+        ],
+      },
+    ],
+  },
 ]
